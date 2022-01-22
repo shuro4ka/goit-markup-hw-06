@@ -337,7 +337,85 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+           
+            <form class="form" autocomplete="off">
+                <div class="form-field">
+                    <input
+                        type="text"
+                        class="form-input"
+                        name="name"
+                        id="name"
+                        placeholder=" "/>
+                        
+                    <label for="name" class="form-label">Имя</label>
+                    <span class="icon-person input-icon">
+                        <svg class="icon-close" width="12px" height="12px">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </span>
+                </div>
 
+                <div class="form-field">
+                    <input
+                        type="tel"
+                        class="form-input"
+                        name="tel"
+                        id="tel"
+                        placeholder=" "/>
+                    <label for="tel" class="form-label">Телефон</label>
+                    <span class="icon-telephon input-icon">
+                        <svg class="icon-close" width="13px" height="13px">
+                            <use href="./images/icons.svg#icon-telephone"></use>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="form-field">
+                    <input
+                        type="email"
+                        class="form-input"
+                        name="mail"
+                        id="mail"
+                        placeholder=" "/>
+                    <label for="mail" class="form-label">Почта</label>
+                    <span class="icon-mail input-icon">
+                        <svg class="icon-close" width="15px" height="12px">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="form-field">
+                    <textarea 
+                    name="comment" 
+                    class="comments"
+                    rows="5" 
+                    placeholder="Введите текст">
+                    </textarea>
+                    <label for="mail" class="form-label">Комментарий</label>
+                    
+                </div>
+
+                <div class="form-field">
+                    <input
+                      type="checkbox"
+                      name="policy"
+                      id="policy"
+                      class="policy-check visually-hidden"
+                    />
+                    <label for="policy" class="check-text">
+                      <!-- <span>
+                        <svg class="policy-icon" width="16" height="15">
+                          <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                      </span> -->
+                      Соглашаюсь с рассылкой и принимаю <span><a class="modal-link">Условия договора</a></span></label
+                    >
+                  </div>
+                <button class="hero-button" data-modal-open type="button">Отправить</button>
+
+            </form>
         </div>
     </div>
     
