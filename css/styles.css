@@ -639,6 +639,7 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
               0px 1px 1px 0px rgba(0, 0, 0, 0.14),
               0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  padding: 40px;
 }
 .modal-close {
   width: 30px;
@@ -670,17 +671,17 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  margin-top: 40px; 
   margin-bottom: 30px;
 }
 .form {
- padding-left: 40px;
- padding-right: 40px;
  text-align: center;
 }
 
 .form-field{
   position: relative;
+}
+
+.form-field:not(:nth-last-of-type(2), :last-of-type) {
   margin-bottom: 28px;
 }
 
@@ -692,7 +693,6 @@ img {
   font-size: 12px;
   line-height: 1.16;
   color: var(--text-color);
-
   position: absolute;
   top: -18px;
   left: 0;
@@ -710,11 +710,6 @@ img {
   transition: fill, border-color var(--animation-function);
 }
 
-/* .form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
-  color: #2196f3;
-  transform: translateY(-50px);
-} */
 
 .form-input:hover,
 .form-input:focus {
@@ -733,12 +728,6 @@ img {
   transform: translateY(-50%);
   display: inline-block; 
   transition: fill var(--animation-function);   
-}
-
-.comments{
-  width: 100%;
-  resize: none;
-  
 }
 
 /*-----------*/
@@ -764,10 +753,12 @@ img {
 }
 .policy-icon {
   fill: transparent;
+ 
+ 
 }
 .policy-check:checked + .check-text span {
   border: none;
-  background-color: var(--accent-color);
+  background-color: var(--brand-color);
 }
 .policy-check:checked + .check-text .policy-icon {
   fill: #ffffff;
@@ -775,12 +766,37 @@ img {
 /*---------*/
 .policy-check:checked + .check-text::before {
   border: none;
-  /* background-image: url(../images/icon-check.svg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+.modal-link{
+  color: var(--brand-color);
+  text-decoration: underline;
+ 
+}
+.form-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 12px 16px;
+  resize: none;
+  border-color: var(--icon-color);
+  outline: 0;
+  transition: border-color var(--animation-function);
+}
 
+.form-textarea::placeholder {
+  color: var(--icon-color);
+  transition: color var(--animation-function);
+}
 
+.form-textarea:hover,
+.form-textarea:focus {
+  border-color: var(--brand-color);
+}
 
-
+.form-textarea:hover::placeholder {
+  color:var(--brand-color);
+}
