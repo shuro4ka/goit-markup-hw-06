@@ -386,16 +386,27 @@
                     </span>
                 </div>
 
-                <div class="form-field">
+                <!-- <div class="form-field">
                     <textarea 
                     name="comment" 
                     class="comments"
-                    rows="5" 
+                
                     placeholder="Введите текст">
                     </textarea>
                     <label for="mail" class="form-label">Комментарий</label>
                     
-                </div>
+                </div> -->
+
+                <div class="form-field">
+                    <!-- <label class="form-label" for="user-text">Комментарий</label> -->
+                    <textarea
+                      name="user-text"
+                      id="user-text"
+                      class="form-label"
+                      placeholder="Введите текст"
+                    ></textarea>
+                    <label class="form-label" for="user-text">Комментарий</label>
+                  </div>
 
                 <div class="form-field">
                     <input
@@ -405,14 +416,15 @@
                       class="policy-check visually-hidden"
                     />
                     <label for="policy" class="check-text">
-                      <!-- <span>
+                     <span>
                         <svg class="policy-icon" width="16" height="15">
                           <use href="./images/icons.svg#icon-check"></use>
                         </svg>
-                      </span> -->
-                      Соглашаюсь с рассылкой и принимаю <span><a class="modal-link">Условия договора</a></span></label
+                      </span>
+                      Соглашаюсь с рассылкой и принимаю <a class="modal-link">Условия договора</a></label
                     >
                   </div>
+
                 <button class="hero-button" data-modal-open type="button">Отправить</button>
 
             </form>
