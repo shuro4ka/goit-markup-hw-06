@@ -222,7 +222,7 @@ img {
   border-color: transparent;
   padding: 10px 32px;
   min-width: 200px;
-  min-height: 50px;
+  height: 50px;
 }
 .hero-button:hover,
 .hero-button:active {
@@ -422,6 +422,7 @@ img {
 }
 
 .clients-link {
+  outline: 0;
   width: 170px;
   height: 92px;
   background-color: #ffffff;
@@ -510,24 +511,47 @@ img {
   background-color: var(--brand-color);
   color: var(--letter-color);
 }
-
-.button-icon {
-  fill: var(--background-color);
-}
 .subscribe {
   display: flex;
 
 }
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.input-wrapper .hero-button {
+  margin-top: 0;
+  position: relative;
+  padding-left: 28px;
+  padding-right: 62px;
+  margin-left: 12px;
+}
+.input-wrapper .form-input {
+  width: 350px;
+  height: 50px;
+}
 .button-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(10%);
+  transform: translateY(-50%);
   display: inline-block;
   transition: fill var(--animation-function);
+  fill: var(--letter-color);
   margin-left: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  position: absolute;
+  right: 28px;
+  top: 50%;
+}
 
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+.footer-input {
+  outline: 0;
+  background-color: var(--footer-color);
 }
 
 /*------------FILTERS--------------*/
