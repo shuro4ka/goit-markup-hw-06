@@ -221,6 +221,8 @@ img {
  
   border-color: transparent;
   padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
 }
 .hero-button:hover,
 .hero-button:active {
@@ -508,6 +510,26 @@ img {
   background-color: var(--brand-color);
   color: var(--letter-color);
 }
+
+.button-icon {
+  fill: var(--background-color);
+}
+.subscribe {
+  display: flex;
+
+}
+.button-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(10%);
+  display: inline-block;
+  transition: fill var(--animation-function);
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
 /*------------FILTERS--------------*/
 
 .btn.list {
@@ -531,6 +553,7 @@ img {
   color: var(--accent-color);
   border-radius: 4px;
   transition: color, box-shadow, background-color, var(--animation-function);
+  
 
   /*
     test
