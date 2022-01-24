@@ -163,7 +163,7 @@ img {
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
   display: flex;
@@ -277,7 +277,7 @@ img {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
@@ -308,7 +308,7 @@ img {
   height: 70px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color:var(--letter-color); 
@@ -336,7 +336,7 @@ img {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
@@ -370,7 +370,7 @@ img {
 .team-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
@@ -405,7 +405,7 @@ img {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
@@ -561,15 +561,15 @@ img {
   display: flex;
   justify-content: center;
 }
-.button-item {
+.btn-item {
   margin-right: 8px;
 }
 .btn-item {
   border: transparent;
-  /* padding: 8px 22px; */
+  padding: 8px 22px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   font-family: inherit;
