@@ -552,6 +552,7 @@ img {
 .footer-input {
   outline: 0;
   background-color: var(--footer-color);
+  color: var(--letter-color);
 }
 
 /*------------FILTERS--------------*/
