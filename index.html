@@ -345,7 +345,7 @@
                         name="e-mail"
                         id="subscribe"
                         placeholder="E-mail"/>
-                        <button class="hero-button" type="submit" data-modal-open type="button">Подписаться
+                        <button class="hero-button footer-button" type="submit" data-modal-open type="button">Подписаться
 
                                         <svg class="button-icon" width="24px" height="24px">
                                             <use href="./images/icons.svg#icon-send"></use>
@@ -371,46 +371,53 @@
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
            
+
             <form class="form" autocomplete="off">
                 <div class="form-field">
+                    <label for="name" class="form-label">Имя</label>
                     <input
                         type="text"
                         class="form-input"
                         name="name"
                         id="name"
                         placeholder=" "/>
-                        
-                    <label for="name" class="form-label">Имя</label>
+
                     <span class="icon-person input-icon">
                         <svg class="icon-close" width="12px" height="12px">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </span>
+                
                 </div>
 
+
                 <div class="form-field">
+                    <label for="tel" class="form-label">Телефон</label>
                     <input
                         type="tel"
                         class="form-input"
                         name="tel"
                         id="tel"
                         placeholder=" "/>
-                    <label for="tel" class="form-label">Телефон</label>
+                        
                     <span class="icon-telephon input-icon">
                         <svg class="icon-close" width="13px" height="13px">
                             <use href="./images/icons.svg#icon-telephone"></use>
                         </svg>
                     </span>
+                
                 </div>
 
+
                 <div class="form-field">
+                    <label for="mail" class="form-label">Почта</label>
                     <input
                         type="email"
                         class="form-input"
                         name="mail"
                         id="mail"
                         placeholder=" "/>
-                    <label for="mail" class="form-label">Почта</label>
+                   
                     <span class="icon-mail input-icon">
                         <svg class="icon-close" width="15px" height="12px">
                             <use href="./images/icons.svg#icon-mail"></use>
@@ -429,12 +436,12 @@
                     
                   </div>
 
-                <div class="form-field">
+                <div class="form-field form-policy">
                     <input
                       type="checkbox"
                       name="policy"
                       id="policy"
-                      class="policy-check is-hidden"
+                      class="policy-check check-hidden"
                     />
                     <label for="policy" class="check-text">
                      <span>
@@ -447,7 +454,7 @@
                     >
                   </div>
 
-                <button class="hero-button" type="submit" data-modal-open type="button">Отправить</button>
+                <button class="hero-button modal-button" type="submit" data-modal-open type="button">Отправить</button>
 
             </form>
         </div>
